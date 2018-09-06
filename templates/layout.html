@@ -1,0 +1,23 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<html>
+  <head>
+    <title>
+      CompanyName Title
+      {% block title %}
+      {% endblock %}
+    </title>
+    <h1>
+      CompanyName Header
+    </h1>
+    {% block head %}
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block content %}
+    {% endblock %}
+    <hr>
+    © copyright 2018 CompanyName Footer
+  </body>
+</html>
